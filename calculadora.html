@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuación Lineal - Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imagenes/logo EL.jfif" class="logo-img"></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menuNav">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="teoria.html">Teoría</a></li>
+                <li><a href="ejemplos.html">Ejercicios</a></li>
+                <li><a href="calculadora.html" class="activo">Calculadora</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Calculadora Automática de Ecuaciones de Primer Grado (ax + b = c)</h2>
+        <p>Ingresa los coeficientes numéricos de tu ecuación lineal para obtener el valor de <em>x</em> paso a paso:</p>
+
+        <div class="form-group">
+            <label for="coefA">Valor de a (Coeficiente de x):</label>
+            <input type="number" id="coefA" placeholder="Ej. 3">
+        </div>
+
+        <div class="form-group">
+            <label for="coefB">Valor de b (Término independiente izquierdo):</label>
+            <input type="number" id="coefB" placeholder="Ej. 5">
+        </div>
+
+        <div class="form-group">
+            <label for="coefC">Valor de c (Término independiente derecho):</label>
+            <input type="number" id="coefC" placeholder="Ej. 20">
+        </div>
+
+        <button id="btnResolverEcuacion" class="btn">Resolver Ecuación</button>  
+        <div id="resultadoAlgebra" class="resultado-box" style="display:none;"></div>
+
+        
+        <hr class="separador">    
+
+        <h2>Calculadora de Ecuaciones de Segundo Grado (ax² + bx + c = 0)</h2>
+        <p>Ingresa los coeficientes de tu ecuación cuadrática para obtener las soluciones usando la fórmula general:</p>
+
+        <div class="form-group">
+            <label for="cuadA">Valor de a (Coeficiente de x²):</label>
+            <input type="number" id="cuadA" placeholder="Ej. 1" step="any">
+        </div>
+
+        <div class="form-group">
+            <label for="cuadB">Valor de b (Coeficiente de x):</label>
+            <input type="number" id="cuadB" placeholder="Ej. -5" step="any">
+        </div>
+
+        <div class="form-group">
+            <label for="cuadC">Valor de c (Término independiente):</label>
+            <input type="number" id="cuadC" placeholder="Ej. 6" step="any">
+        </div>
+
+        <button id="btnResolverCuadratica" class="btn">Resolver Ecuación Cuadrática</button>
+        <div id="resultadoCuadratica" class="resultado-box" style="display:none;"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto Educativo de Desarrollo Web - Grupo 3</p>
+    </footer>
+    
+    <!-- Vinculación del script de JavaScript -->
+    <script src="js/java.js"></script>
+    
+</body>
+</html>
